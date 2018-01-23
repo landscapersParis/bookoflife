@@ -26,3 +26,6 @@ api.user.confirm(token).then(user => {
 	localStorage.bookoflifeJWT = user.token;
 	dispatch(userLoggedIn(user));
 });
+
+export const resetPasswordRequest = ({ email }) => () =>
+  api.user.resetPasswordRequest(email);
