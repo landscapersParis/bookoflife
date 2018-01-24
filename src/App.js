@@ -35,7 +35,7 @@ const App = ({ location }) => (
 		/>
 		<GuestRoute
 		 location={location} 
-		 path="/reset_password"
+		 path="/reset_password/:token"
 		 exact
 		 component={ResetPasswordPage}
 		/>
